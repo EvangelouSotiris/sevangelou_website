@@ -1,0 +1,84 @@
+body {
+	background-color: #564851;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    color: white;
+    text-align: center;
+}
+
+.center_container {
+	display: inline-block;
+	text-align: center; 
+	min-width: 200px;
+	max-width: 1500px;
+}
+
+.profile_pic {
+	border-radius: 50%;
+	width: 150px;
+	padding: 5px;
+   	border: 5px solid transparent;
+   	border: 5px solid #85c393;
+   	background-color:transparent;
+}
+
+.highlighted {
+	color: #85c393;
+}
+
+.less-highlighted {
+	color: #759c7e;
+}
+
+.description {
+	border-radius: 5%;
+	padding: 5px;
+	background-color: #655f59;
+	display: inline-block;
+	color: white;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	height: 50%;
+	width: 50%;
+	min-width: 300px;
+	font-size: 20px;
+}
+
+.social {
+	border-radius: 25%;
+	padding: 5px;
+	color: #85c393;
+	font-size: 30px;
+}
+
+.social:hover {
+	border-radius: 25%;
+	padding: 5px;
+	color: #564851;
+	background-color: #85c393;
+}
+
+.social_row {
+	padding-top: 5px;
+}
+
+.social_row li {
+	display: inline;
+	padding: 10px;
+}
+
+.link_btn:hover {
+	
+}
+
+.link_row {
+	padding-top: 5px;
+}
+
+.link_row li {
+	border-radius: 25%;
+	color: #564851;
+	background-color: #85c393;
+	display: inline;
+	padding: 10px;
+}
