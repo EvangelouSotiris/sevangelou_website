@@ -1,8 +1,9 @@
 body {
 	--pagebackground : #020300;
-	--containerbackground : #59544b;
-	--highlight : #79a9d1;
-	--textcolor : #7d8ca3;
+	--containerbackground : #051622;
+	--highlight : #1ba098;
+	--textcolor : #deb992;
+	--socialcolor : #deb992;
 	background-color: var(--pagebackground);
     font-family: 'Inconsolata', monospace;
     color: var(--textcolor);
@@ -13,8 +14,17 @@ body {
 	padding-top: 10vh;
 	display: inline-block;
 	text-align: center; 
-	min-width: 200px;
+	min-width: 350px;
 	max-width: 1500px;
+}
+
+.diff_cs {
+	font-size: 20px;
+}
+
+.colorschemes {
+	width : 20px;
+	display: inline;
 }
 
 .profile_pic {
@@ -41,7 +51,7 @@ body {
 	padding-bottom: 20px;
 	height: 50%;
 	width: 50%;
-	min-width: 300px;
+	min-width: 350px;
 	font-size: 18px;
 }
 
@@ -62,22 +72,23 @@ body {
 }
 
 .description a:hover {
-	background-color: var(--textcolor);
-	color: var(--containerbackground);
+	background-color: var(--highlight);
+	color: var(--textcolor);
 }
 
 .social {
 	border-radius: 25%;
 	padding: 5px;
-	color: var(--highlight);
+	color: var(--pagebackground);
+	color: var(--socialcolor);
 	font-size: 30px;
 }
 
 .social:hover {
 	border-radius: 25%;
 	padding: 5px;
-	color: var(--pagebackground);
-	background-color: var(--highlight);
+	color: var(--highlight);
+	background-color: var(--containerbackground);
 }
 
 .social_row {
@@ -89,22 +100,28 @@ body {
 	padding: 10px;
 }
 
-.link_btn:hover {
-	
-}
-
 .link_row {
-	padding-top: 5px;
+	padding-top: 20px;
 }
 
 .link_row li {
-	border-radius: 25%;
-	color: var(--pagebackground);
-	background-color: var(--highlight);
-	display: inline;
-	padding: 10px;
+	display: inline-block;
 }
 
-.link_row li a {
+#link_btn {
+	font-size: 25px;
+	padding: 5px;
+	background-color: transparent;
+	color: var(--textcolor);
 	text-decoration: none;
+	border: none;
+}
+
+#link_btn:hover {
+	font-size: 25px;
+	padding: 5px;
+	background-color: var(--transparent);
+	color: var(--highlight);
+	text-decoration: none;
+	border: none;
 }

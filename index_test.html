@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- JAVASCRIPT IMPORTS -->
-	<script type="text/javascript" src="js/top_pad.js"></script>
+	<script type="text/javascript" src="js/js_functions.js"></script>
 	<!-- META TAGS -->
 	<meta charset="UTF-8">	
 </head>
@@ -16,28 +16,35 @@
 		<div class="description">
 			<script type="text/javascript">top_pad_check();</script>
 			<img src="items/delo.jpg" class="profile_pic">
-			<h2> Hi, I am <span class="highlighted">Sotiris Evangelou </span>. </h2>
-			I am a 23 year old senior student at the <a href="https://www.e-ce.uth.gr/?lang=en">University of Thessaly</a>, Greece. <br><br>
-			Candidate for a Master of Engineering on Electrical and Computer Engineering. <br>
+			<h2> Hi, I am <span class="highlighted">Sotiris Evangelou</span>. </h2>
+			I am a 23 year old senior student at the <a href="https://www.e-ce.uth.gr/?lang=en">University of Thessaly</a>, Greece. <br>
+			Candidate for a Master of Engineering on Electrical and Computer Engineering. <br><br>
 			My interests revolve around <b>Software Engineering</b>, <b>Network Engineering</b>, <b>Linux Administration</b>, <b>Computer/Information Security</b> and <b>Machine Learning/AI</b>.<br><br>
 			Apart from studying at my University, I am also:<br>
 			Working as a <span class="highlighted">System Administrator</span> at <a href="https://www.friktoria.com/en/">Friktoria.com Data Center Services</a>,<br>
-			Helping as a <span class="highlighted">Teaching Assistant</span> for PSE in Data Science Applications course.<br> 
-			Working on my Diploma Thesis<span class="highlighted">"Security Audit of SYNAISTHISI IOT platform"</span>.
+			Helping as a <span class="highlighted">Teaching Assistant</span> for PSEs in Data Science Applications ECE514.<br> 
+			Working on my Diploma Thesis: <span class="highlighted">"Security Audit of SYNAISTHISI IOT platform"</span>.
+			<ul class="link_row">
+				<li><button id="link_btn" href="">Projects</button></li>
+				<li><button id="link_btn" href="">Skills</button></li>
+				<li><button id="link_btn" href="">Resume</button></li>
+				<li><button id="link_btn" href="">References</button></li>
+			</ul>
+			<br><br>
+			<div class="diff_cs">
+				Choose your theme: 
+				<img class="colorschemes" src="items/basic_cs.png" onclick="colorscheme_change(1)">
+				<img class="colorschemes" src="items/basic_cs.png" onclick="colorscheme_change(2)">
+				<img class="colorschemes" src="items/basic_cs.png" onclick="colorscheme_change(3)">
+				<img class="colorschemes" src="items/basic_cs.png" onclick="colorscheme_change(4)">
+				<img class="colorschemes" src="items/basic_cs.png" onclick="colorscheme_change(5)">
+			</div>
 		</div>
 		<ul class="social_row">
 			<li><a class="social" href="https://www.linkedin.com/in/sevangelou/"><i class="fa fa-linkedin"></i></a></li>
 			<li><a class="social" href="https://github.com/EvangelouSotiris"><i class="fa fa-github"></i></a></li>
 			<li><a class="social" href="mailto:sevangelou@uth.gr?subject=Hello there!"><i class="fa fa-envelope"></i></a></li>
 		</ul>
-		<div>
-			<h3> Find out more about me. </h3>
-			<ul class="link_row">
-				<li><a class="link_btn" href="https://www.linkedin.com/in/sevangelou/">Projects</a></li>
-				<li><a class="link_btn" href="https://github.com/EvangelouSotiris">Skills</i></a></li>
-				<li><a class="link_btn" href="mailto:sevangelou@uth.gr?subject=Hello there!">Shit</i></a></li>
-			</ul>
-		</div>
 	</div>
 </body>
 
