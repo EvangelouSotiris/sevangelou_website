@@ -19,12 +19,18 @@ body {
 }
 
 .diff_cs {
-	font-size: 20px;
+	color: var(--socialcolor);
+	padding-top: 20px;
+	font-size: 22px;
 }
 
 .colorschemes {
 	width : 20px;
 	display: inline;
+}
+
+.colorschemes:hover {
+	cursor: pointer; 
 }
 
 .profile_pic {
@@ -102,6 +108,8 @@ body {
 
 .link_row {
 	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .link_row li {
@@ -109,6 +117,7 @@ body {
 }
 
 #link_btn {
+	font-family: 'Bangers', cursive;
 	font-size: 25px;
 	padding: 5px;
 	background-color: transparent;
@@ -118,10 +127,30 @@ body {
 }
 
 #link_btn:hover {
+	cursor: pointer;
 	font-size: 25px;
 	padding: 5px;
 	background-color: var(--transparent);
 	color: var(--highlight);
 	text-decoration: none;
-	border: none;
+}
+
+#home {
+	display: inline-block;
+}
+
+#projects {
+	display: none;
+}
+
+#skills {
+	display: none;
+}
+
+#references {
+	display: none;
+}
+
+#resume {
+	display: none;
 }
