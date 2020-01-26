@@ -1,6 +1,6 @@
 function top_pad_check() {
 	const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-	if (vw < 400) {
+	if (vw < 450) {
 		const element = document.querySelector('.description');
 		const element2 = document.querySelector('.center_container');
 		const element3 = document.querySelector('.link_row');
@@ -9,15 +9,15 @@ function top_pad_check() {
 		element.style.setProperty('padding-left','0px');
 		element.style.setProperty('padding-right','0px');
 		element2.style.setProperty('padding-top','0px');
-		element.style.setProperty('min-width',vw-20+'px');
-		element2.style.setProperty('min-width',vw-20+'px');
+		element.style.setProperty('min-width',vw-30+'px');
+		element2.style.setProperty('min-width',vw-30+'px');
 	}
-	if (vw > 400 && vw < 720) {
+	if (vw > 450 && vw < 720) {
 		const element = document.querySelector('.description');
 		const element2 = document.querySelector('.center_container');
 		element.style.setProperty('width','75%');
-		element.style.setProperty('padding-left','20px');
-		element.style.setProperty('padding-right','20px');
+		element.style.setProperty('padding-left','10px');
+		element.style.setProperty('padding-right','10px');
 	}
 	if (vw > 720) {
 		const element = document.querySelector('.description');
@@ -25,7 +25,7 @@ function top_pad_check() {
 		element.style.setProperty('width','60%');
 		element.style.setProperty('padding-left','20px');
 		element.style.setProperty('padding-right','20px');
-		element2.style.setProperty('padding-top','5%');
+		element2.style.setProperty('padding-top','5px');
 	}
 }
 
