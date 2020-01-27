@@ -2,30 +2,23 @@ function top_pad_check() {
 	const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	if (vw < 450) {
 		const element = document.querySelector('.description');
-		const element2 = document.querySelector('.center_container');
 		const element3 = document.querySelector('.link_row');
 		element.style.setProperty('width','100%');
-		element2.style.setProperty('width','100%');
 		element.style.setProperty('padding-left','0px');
 		element.style.setProperty('padding-right','0px');
-		element2.style.setProperty('padding-top','0px');
 		element.style.setProperty('min-width',vw-30+'px');
-		element2.style.setProperty('min-width',vw-30+'px');
 	}
 	if (vw > 450 && vw < 720) {
 		const element = document.querySelector('.description');
-		const element2 = document.querySelector('.center_container');
 		element.style.setProperty('width','75%');
 		element.style.setProperty('padding-left','10px');
 		element.style.setProperty('padding-right','10px');
 	}
 	if (vw > 720) {
 		const element = document.querySelector('.description');
-		const element2 = document.querySelector('.center_container');
 		element.style.setProperty('width','60%');
 		element.style.setProperty('padding-left','20px');
 		element.style.setProperty('padding-right','20px');
-		element2.style.setProperty('padding-top','5px');
 	}
 }
 
@@ -67,13 +60,29 @@ function view_section(string_with_id) {
 	sections.forEach( function func(value) {
 		if (value == string_with_id) {
 			const element = document.querySelector(string_with_id);
-			console.log(getComputedStyle(element)["display"]);
 			element.style.setProperty('display','inline-block');
-			console.log(getComputedStyle(element)["display"]);
 			document.title = 'SE> '+ string_with_id.charAt(1).toUpperCase() + string_with_id.substr(2);
 		} else {
 			const element = document.querySelector(value);
 			element.style.setProperty('display','none');
 		}
-	}); 
+	});
+}
+
+function load_project(choice) {
+	var sections = [".web_projects",".ml_projects",".cs_projects",".gs_projects",".la_projects",".net_projects"];
+	const element = document.querySelector(".project_overview");
+	element.style.setProperty("display","none");
+	const element2 = document.querySelector(sections[choice]);
+	element2.style.setProperty("display","block");
+}
+
+function return_to_overview() {
+	var sections = [".web_projects",".ml_projects",".cs_projects",".gs_projects",".la_projects",".net_projects"];
+	const element = document.querySelector(".project_overview");
+	element.style.setProperty("display","block");
+	sections.forEach( function hide(value){
+		const element2 = document.querySelector(value);
+		element2.style.setProperty("display","none");
+	});
 }

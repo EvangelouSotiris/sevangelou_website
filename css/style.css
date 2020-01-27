@@ -10,12 +10,9 @@ body {
     text-align: center;
 }
 
-.center_container {
-	padding-top: 5px;
-	display: inline-block;
-	text-align: center; 
-	min-width: 350px;
-	max-width: 1500px;
+ul {
+	list-style: none;
+  padding-left: 0;
 }
 
 .diff_cs {
@@ -30,7 +27,7 @@ body {
 }
 
 .colorschemes:hover {
-	cursor: pointer; 
+	cursor: pointer;
 }
 
 .profile_pic {
@@ -47,6 +44,7 @@ body {
 }
 
 .description {
+	padding-top: 5px;
 	border-radius: 5%;
 	padding: 5px;
 	background-color: var(--containerbackground);
@@ -104,6 +102,69 @@ body {
 .social_row li {
 	display: inline;
 	padding: 10px;
+}
+
+.project_list li {
+	display: block;
+}
+
+.project_cat {
+	text-decoration: none;
+	border: none;
+	background-color: transparent;
+	color: var(--textcolor);
+}
+
+.project_cat i {
+	font-size: 40px;
+}
+
+.project_cat p {
+	display: block;
+}
+
+.project_cat:hover {
+	text-decoration: none;
+	border: none;
+	background-color: transparent;
+	color: var(--highlight);
+}
+
+.project_cat i:hover + p {
+	display: block;
+}
+
+.project_overview {
+	display: block;
+}
+
+.web_projects {
+	display: none;
+}
+
+.ml_projects {
+	display: none;
+}
+
+.cs_projects {
+	display: none;
+}
+
+.gs_projects {
+	display: none;
+}
+
+.la_projects {
+	display: none;
+}
+
+.net_projects {
+	display: none;
+}
+
+.control_button {
+	font-family: 'Bangers', cursive;
+	padding-bottom: 1vh;
 }
 
 .link_row {

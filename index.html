@@ -1,88 +1,252 @@
 <!DOCTYPE html>
 <html>
+
+
 <head>
 	<title>SE> Home</title>
 	<!-- CSS IMPORTS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/jpg" href="items/favicon.png"/>
+
 	<!-- JAVASCRIPT IMPORTS -->
 	<script type="text/javascript" src="js/js_functions.js"></script>
+	<script src="https://kit.fontawesome.com/8414bca3f8.js" crossorigin="anonymous"></script>
+
 	<!-- META TAGS -->
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
+
 <body onresize="top_pad_check();">
-	<div class="center_container" onload="top_pad_check()";>
-		<div id="home" class="description">
-			<img src="items/delo.jpg" class="profile_pic">
-			<h2> Hi, I am <span class="highlighted">Sotiris Evangelou</span>. </h2>
-			I am a 23 year old senior student at the <a href="https://www.e-ce.uth.gr/?lang=en">University of Thessaly</a>, Greece. <br>
-			Candidate for a Master of Engineering on Electrical and Computer Engineering. <br><br>
-			My interests revolve around <b>Software Engineering</b>, <b>Network Engineering</b>, <b>Linux Administration</b>, <b>Computer/Information Security</b> and <b>Machine Learning/AI</b>.<br><br>
-			Apart from studying at my University, I am also:<br>
-			Working as a <span class="highlighted">System Administrator</span> at <a href="https://www.friktoria.com/en/">Friktoria.com Data Center Services</a>,<br>
-			Helping as a <span class="highlighted">Teaching Assistant</span> for PSEs in Data Science Applications ECE514.<br> 
-			Working on my Diploma Thesis: <span class="highlighted">"Security Audit of SYNAISTHISI IOT platform"</span>.
-			<ul class="link_row">
-				<li><button id="link_btn" onclick="view_section('#projects');">Projects</button></li>
-				<li><button id="link_btn" onclick="view_section('#skills');">Skills</button></li>
-				<li><button id="link_btn" onclick="view_section('#resume');">Resume</button></li>
-				<li><button id="link_btn" onclick="view_section('#references');">References</button></li>
-			</ul>
-		</div>
-		<div id="projects" class="description" onload="top_pad_check()";>
-			<h2> Coming soon... </h2>
-			<ul class="link_row">
-				<li><button id="link_btn" onclick="view_section('#home');">Home</button></li>
-				<li><button id="link_btn" onclick="view_section('#skills');">Skills</button></li>
-				<li><button id="link_btn" onclick="view_section('#resume');">Resume</button></li>
-				<li><button id="link_btn" onclick="view_section('#references');">References</button></li>
-			</ul>
-		</div>
-		<div id="skills" class="description" onload="top_pad_check()";>
-			<h2> Coming soon... </h2>
-			<ul class="link_row">
-				<li><button id="link_btn" onclick="view_section('#home');">Home</button></li>
-				<li><button id="link_btn" onclick="view_section('#projects');">Projects</button></li>
-				<li><button id="link_btn" onclick="view_section('#resume');">Resume</button></li>
-				<li><button id="link_btn" onclick="view_section('#references');">References</button></li>
-			</ul>
-		</div>
-		<div id="resume" class="description" onload="top_pad_check()";>
-			<h2> Coming soon... </h2>
-			<ul class="link_row">
-				<li><button id="link_btn" onclick="view_section('#home');">Home</button></li>
-				<li><button id="link_btn" onclick="view_section('#projects');">Projects</button></li>
-				<li><button id="link_btn" onclick="view_section('#skills');">Skills</button></li>
-				<li><button id="link_btn" onclick="view_section('#references');">References</button></li>
-			</ul>
-		</div>
-		<div id="references" class="description" onload="top_pad_check()";>
-			<h2> Coming soon... </h2>
-			<ul class="link_row">
-				<li><button id="link_btn" onclick="view_section('#home');">Home</button></li>
-				<li><button id="link_btn" onclick="view_section('#projects');">Projects</button></li>
-				<li><button id="link_btn" onclick="view_section('#skills');">Skills</button></li>
-				<li><button id="link_btn" onclick="view_section('#resume');">Resume</button></li>
-			</ul>
-		</div>
+	<div style="padding: 0.5vh;"></div>
+	<!-- HOME -->
+	<div id="home" class="container description">
+		<img src="items/delo.jpg" class="profile_pic">
+		<h2> Hi, I am <span class="highlighted">Sotiris Evangelou</span>. </h2>
+		I am a 23 year old senior student at the <a href="https://www.e-ce.uth.gr/?lang=en">University of Thessaly</a>, Greece. <br>
+		Candidate for a Master of Engineering on Electrical and Computer Engineering. <br><br>
+		My interests revolve around <b>Software Engineering</b>, <b>Network Engineering</b>, <b>Linux Administration</b>, <b>Computer/Information Security</b> and <b>Machine Learning/AI</b>.<br><br>
+		Apart from studying at my University, I am also:<br>
+		Working as a <span class="highlighted">System Administrator</span> at <a href="https://www.friktoria.com/en/">Friktoria.com Data Center Services</a>,<br>
+		Helping as a <span class="highlighted">Teaching Assistant</span> for PSEs in Data Science Applications ECE514.<br>
+		Working on my Diploma Thesis: <span class="highlighted">"Security Audit of SYNAISTHISI IOT platform"</span>.
+
+		<ul class="link_row">
+			<li><button id="link_btn" style="color:var(--highlight);" disabled>Home</button></li>
+			<li><button id="link_btn" onclick="view_section('#projects');">Projects</button></li>
+			<li><button id="link_btn" onclick="view_section('#skills');">Skills</button></li>
+			<li><button id="link_btn" onclick="view_section('#resume');">Resume</button></li>
+			<li><button id="link_btn" onclick="view_section('#references');">References</button></li>
+		</ul>
+
 	</div>
+
+	<!-- PROJECTS -->
+	<div id="projects" class="description" onload="top_pad_check()";>
+		<h2> Choose a category of interest: </h2>
+		<br>
+		<div class="project_overview">
+			<div class="row">
+			  <div class="col">
+					<button class="project_cat" onclick="load_project(0);"><i class="fas fa-globe-europe"></i><br><p>Web Development</p></button>
+				</div>
+			  <div class="col">
+					<button class="project_cat" onclick="load_project(1);"><i class="fas fa-brain"></i><br><p>Machine Learning</p></button>
+				</div>
+				<div class="col">
+					<button class="project_cat" onclick="load_project(2);"><i class="fas fa-fingerprint"></i><br><p>Cybersecurity</p></button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button class="project_cat" onclick="load_project(3);"><i class="fas fa-code"></i><p>General Software</p></button>
+				</div>
+			  <div class="col">
+					<button class="project_cat" onclick="load_project(4);"><i class="fas fa-server"></i><p>Linux Administration</p></button>
+				</div>
+			  <div class="col">
+					<button class="project_cat" onclick="load_project(5);"><i class="fas fa-network-wired"></i><br><p>Computer Networking</p></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="web_projects">
+			<button class="project_cat control_button" onclick="return_to_overview();">Return to Project Categories</button>
+			<div class="row">
+			  <div class="col">
+					Asynxy: Asynchronous Proxy RCE
+				</div>
+			  <div class="col">
+					This Website!
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col">
+					Redis In-game database
+				</div>
+			  <div class="col">
+					Apache tomcat Java servlet webapp
+				</div>
+			</div>
+		</div>
+
+		<div class="ml_projects">
+			<button class="project_cat control_button" onclick="return_to_overview();">Return to Project Categories</button>
+			<div class="row">
+			  <div class="col">
+					Real time Network IDS with Machine Learning
+				</div>
+			  <div class="col">
+					Citation Forecasting Timeseries Analysis
+				</div>
+			</div>
+		</div>
+
+		<div class="gs_projects">
+			<button class="project_cat control_button" onclick="return_to_overview();">Return to Project Categories</button>
+			<div class="row">
+			  <div class="col">
+					Automated movie rating based on word scores from reviews
+				</div>
+			</div>
+		</div>
+
+		<div class="cs_projects">
+			<button class="project_cat control_button" onclick="return_to_overview();">Return to Project Categories</button>
+			<div class="row">
+			  <div class="col">
+					tASE: Automated Security Assessments
+				</div>
+			  <div class="col">
+					Network Protocol Attacks Study
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col">
+					Common Vulnerabilities of Ethereum Smart Contracts
+				</div>
+			  <div class="col">
+					Panoptis 2019 Coordination
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col">
+					Deloitte Greek Hacking Challenge finalist
+				</div>
+			</div>
+		</div>
+
+		<div class="la_projects">
+			<button class="project_cat control_button" onclick="return_to_overview();">Return to Project Categories</button>
+			<div class="row">
+			  <div class="col">
+					Memterm
+				</div>
+			  <div class="col">
+					Automated secondary NS zone syncing with primary NS
+				</div>
+			</div>
+		</div>
+
+		<div class="net_projects">
+			<button class="project_cat control_button" onclick="return_to_overview();">Return to Project Categories</button>
+			<div class="row">
+			  <div class="col">
+					Subnet Device scanner
+				</div>
+			  <div class="col">
+					VLAN Implementation on Ryu SDN Framework
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col">
+					Network Protocol Attacks Study
+				</div>
+			  <div class="col">
+					Real time Network IDS with Machine Learning
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col">
+					SCTP and DCCP server-client implementation
+				</div>
+			</div>
+		</div>
+
+		<ul class="link_row">
+			<li><button id="link_btn" onclick="return_to_overview(); view_section('#home');">Home</button></li>
+			<li><button id="link_btn" style="color:var(--highlight);" disabled>Projects</button></li>
+			<li><button id="link_btn" onclick="return_to_overview(); view_section('#skills');">Skills</button></li>
+			<li><button id="link_btn" onclick="return_to_overview(); view_section('#resume');">Resume</button></li>
+			<li><button id="link_btn" onclick="return_to_overview(); view_section('#references');">References</button></li>
+		</ul>
+
+	</div>
+
+	<!-- SKILLS -->
+	<div id="skills" class="description" onload="top_pad_check()";>
+		<h2> Coming soon... </h2>
+
+		<ul class="link_row">
+			<li><button id="link_btn" onclick="view_section('#home');">Home</button></li>
+			<li><button id="link_btn" onclick="view_section('#projects');">Projects</button></li>
+			<li><button id="link_btn" style="color:var(--highlight);" disabled>Skills</button></li>
+			<li><button id="link_btn" onclick="view_section('#resume');">Resume</button></li>
+			<li><button id="link_btn" onclick="view_section('#references');">References</button></li>
+		</ul>
+
+	</div>
+
+	<!-- RESUME -->
+	<div id="resume" class="description" onload="top_pad_check()";>
+		<h2> Coming soon... </h2>
+
+		<ul class="link_row">
+			<li><button id="link_btn" onclick="view_section('#home');">Home</button></li>
+			<li><button id="link_btn" onclick="view_section('#projects');">Projects</button></li>
+			<li><button id="link_btn" onclick="view_section('#skills');">Skills</button></li>
+			<li><button id="link_btn" style="color:var(--highlight);" disabled>Resume</button></li>
+			<li><button id="link_btn" onclick="view_section('#references');">References</button></li>
+		</ul>
+
+	</div>
+
+	<!-- REFERENCES -->
+	<div id="references" class="description" onload="top_pad_check()";>
+		<h2> Coming soon... </h2>
+
+		<ul class="link_row">
+			<li><button id="link_btn" onclick="view_section('#home');">Home</button></li>
+			<li><button id="link_btn" onclick="view_section('#projects');">Projects</button></li>
+			<li><button id="link_btn" onclick="view_section('#skills');">Skills</button></li>
+			<li><button id="link_btn" onclick="view_section('#resume');">Resume</button></li>
+			<li><button id="link_btn" style="color:var(--highlight);" disabled>References</button></li>
+		</ul>
+
+	</div>
+
+
+	<!-- COLORSCHEME CHANGE DIV -->
 	<div class="diff_cs">
-		Choose your theme: 
+		Choose your theme:
 		<img class="colorschemes" src="items/basic_cs.png" onclick="colorscheme_change(1)">
 		<img class="colorschemes" src="items/cs2.png" onclick="colorscheme_change(2)">
 		<img class="colorschemes" src="items/cs3.png" onclick="colorscheme_change(3)">
 		<img class="colorschemes" src="items/cs4.png" onclick="colorscheme_change(4)">
 	</div>
 	<br>
+
+	<!-- SOCIAL MEDIA TAB -->
 	<ul class="social_row">
-		<li><a class="social" href="https://www.linkedin.com/in/sevangelou/"><i class="fa fa-linkedin"></i></a></li>
-		<li><a class="social" href="https://github.com/EvangelouSotiris"><i class="fa fa-github"></i></a></li>
-		<li><a class="social" href="mailto:sevangelou@uth.gr?subject=Hello there!"><i class="fa fa-envelope"></i></a></li>
+		<li><a class="social" href="https://www.linkedin.com/in/sevangelou/"><i class="fab fa-linkedin-in"></i></a></li>
+		<li><a class="social" href="https://github.com/EvangelouSotiris"><i class="fab fa-github-alt"></i></a></li>
+		<li><a class="social" href="mailto:sevangelou@uth.gr?subject=Hello there!"><i class="fas fa-envelope"></i></a></li>
 	</ul>
+
 </body>
 
 </html>
