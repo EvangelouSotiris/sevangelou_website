@@ -71,18 +71,73 @@ function view_section(string_with_id) {
 
 function load_project(choice) {
 	var sections = [".web_projects",".ml_projects",".cs_projects",".gs_projects",".la_projects",".net_projects"];
+	var proj_desc = ["w_proj","m_proj","c_proj","g_proj","l_proj","n_proj"];
 	const element = document.querySelector(".project_overview");
 	element.style.setProperty("display","none");
 	const element2 = document.querySelector(sections[choice]);
 	element2.style.setProperty("display","block");
+	document.getElementsByClassName(proj_desc[choice])[0].style.setProperty("display","block");
 }
 
 function return_to_overview() {
 	var sections = [".web_projects",".ml_projects",".cs_projects",".gs_projects",".la_projects",".net_projects"];
+	var proj_desc = [".w_proj",".m_proj",".c_proj",".g_proj",".l_proj",".n_proj"];
 	const element = document.querySelector(".project_overview");
 	element.style.setProperty("display","block");
 	sections.forEach( function hide(value){
 		const element2 = document.querySelector(value);
 		element2.style.setProperty("display","none");
 	});
+}
+
+function next_project() {
+	var sections = ["web_projects","ml_projects","cs_projects","gs_projects","la_projects","net_projects"];
+	var proj_desc = ["w_proj","m_proj","c_proj","g_proj","l_proj","n_proj"];
+
+	for (i=0; i< sections.length; i++){
+		if (document.getElementsByClassName(sections[i])[0].style.display == "block"){
+			var position = i;
+			var projects = document.getElementsByClassName(proj_desc[position]);
+			for (j=0; j< projects.length; j++){
+				if (projects[j].style.display == "block"){
+					if (j==projects.length-1){
+						projects[j].style.setProperty("display","none");
+						projects[0].style.setProperty("display","block");
+						break;
+					}
+					else {
+						projects[j].style.setProperty("display","none");
+						projects[j+1].style.setProperty("display","block");
+						break;
+					}
+				}
+			}
+		}
+	}
+}
+
+function prev_project() {
+	var sections = ["web_projects","ml_projects","cs_projects","gs_projects","la_projects","net_projects"];
+	var proj_desc = ["w_proj","m_proj","c_proj","g_proj","l_proj","n_proj"];
+
+	for (i=0; i< sections.length; i++){
+		if (document.getElementsByClassName(sections[i])[0].style.display == "block"){
+			var position = i;
+			var projects = document.getElementsByClassName(proj_desc[position]);
+			for (j=0; j< projects.length; j++){
+				if (projects[j].style.display == "block"){
+					if (j==0){
+						projects[0].style.setProperty("display","none");
+						projects[projects.length-1].style.setProperty("display","block");
+						break;
+					}
+					else {
+						projects[j].style.setProperty("display","none");
+						projects[j-1].style.setProperty("display","block");
+						break;
+					}
+				}
+			}
+		}
+	}
 }

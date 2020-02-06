@@ -36,11 +36,11 @@
 		Working on my Diploma Thesis: <span class="highlighted">"Security Audit of SYNAISTHISI IOT platform"</span>.
 
 		<ul class="link_row">
-			<li><button id="link_btn" style="color:var(--highlight);" disabled>Home</button></li>
-			<li><button id="link_btn" onclick="view_section('#projects');">Projects</button></li>
-			<li><button id="link_btn" onclick="view_section('#skills');">Skills</button></li>
-			<li><button id="link_btn" onclick="view_section('#resume');">Resume</button></li>
-			<li><button id="link_btn" onclick="view_section('#references');">References</button></li>
+			<li><button class="link_btn" style="color:var(--highlight);" disabled>Home</button></li>
+			<li><button class="link_btn" onclick="view_section('#projects');">Projects</button></li>
+			<li><button class="link_btn" onclick="view_section('#skills');">Skills</button></li>
+			<li><button class="link_btn" onclick="view_section('#resume');">Resume</button></li>
+			<li><button class="link_btn" onclick="view_section('#references');">References</button></li>
 		</ul>
 
 	</div>
@@ -75,114 +75,99 @@
 		</div>
 
 		<div class="web_projects">
+			<button class="project_cat control_button" onclick="prev_project();"><i class="fas fa-arrow-circle-left"></i></button>
 			<button class="project_cat control_button" onclick="return_to_overview();">Return to Project Categories</button>
-			<div class="row">
-			  <div class="col">
-					Asynxy: Asynchronous Proxy RCE
-				</div>
-			  <div class="col">
-					This Website!
-				</div>
+			<button class="project_cat control_button" onclick="next_project();"><i class="fas fa-arrow-circle-right"></i></button>
+			<div id="1" class="w_proj" style="display: none;">
+				Asynxy: Asynchronous Proxy RCE
 			</div>
-			<div class="row">
-			  <div class="col">
-					Redis In-game database
-				</div>
-			  <div class="col">
-					Apache tomcat Java servlet webapp
-				</div>
+			<div id="2" class="w_proj" style="display: none;">
+				This Website!
+			</div>
+			<div id="3" class="w_proj" style="display: none;">
+				Ingame Database App with Redis
+			</div>
+			<div id="4" class="w_proj" style="display: none;">
+				Tomcat Java Servlet Webapp
 			</div>
 		</div>
 
 		<div class="ml_projects">
+			<button class="project_cat control_button" onclick="prev_project();"><i class="fas fa-arrow-circle-left"></i></button>
 			<button class="project_cat control_button" onclick="return_to_overview();">Return to Project Categories</button>
-			<div class="row">
-			  <div class="col">
-					Real time Network IDS with Machine Learning
-				</div>
-			  <div class="col">
-					Citation Forecasting Timeseries Analysis
-				</div>
+			<button class="project_cat control_button" onclick="next_project();"><i class="fas fa-arrow-circle-right"></i></button>			<div id="1" class="m_proj" style="display: none;">
+				Real time Network IDS with Machine Learning
+			</div>
+			<div id="2" class="m_proj" style="display: none;">
+				Citation Forecasting Timeseries Analysis
 			</div>
 		</div>
 
 		<div class="gs_projects">
+			<button class="project_cat control_button" onclick="prev_project();"><i class="fas fa-arrow-circle-left"></i></button>
 			<button class="project_cat control_button" onclick="return_to_overview();">Return to Project Categories</button>
-			<div class="row">
-			  <div class="col">
-					Automated movie rating based on word scores from reviews
-				</div>
+			<button class="project_cat control_button" onclick="next_project();"><i class="fas fa-arrow-circle-right"></i></button>			<div id="1" class="g_proj" style="display: none;">
+				Automated movie rating based on word scores from reviews
 			</div>
 		</div>
 
 		<div class="cs_projects">
+			<button class="project_cat control_button" onclick="prev_project();"><i class="fas fa-arrow-circle-left"></i></button>
 			<button class="project_cat control_button" onclick="return_to_overview();">Return to Project Categories</button>
-			<div class="row">
-			  <div class="col">
-					tASE: Automated Security Assessments
-				</div>
-			  <div class="col">
-					Network Protocol Attacks Study
-				</div>
+			<button class="project_cat control_button" onclick="next_project();"><i class="fas fa-arrow-circle-right"></i></button>			<div id="1" class="c_proj" style="display: none;">
+				tASE: Automated Security Assessments
 			</div>
-			<div class="row">
-			  <div class="col">
-					Common Vulnerabilities of Ethereum Smart Contracts
-				</div>
-			  <div class="col">
-					Panoptis 2019 Coordination
-				</div>
+			<div id="2" class="c_proj" style="display: none;">
+				Network Protocol Attacks Study
 			</div>
-			<div class="row">
-			  <div class="col">
-					Deloitte Greek Hacking Challenge finalist
-				</div>
+			<div id="3" class="c_proj" style="display: none;">
+				Common Vulnerabilities of Ethereum Smart Contracts
+			</div>
+			<div id="4" class="c_proj" style="display: none;">
+				Panoptis 2019 Coordination
+			</div>
+			<div id="5" class="c_proj" style="display: none;">
+				Deloitte Greek Hacking Challenge finalist
 			</div>
 		</div>
 
 		<div class="la_projects">
+			<button class="project_cat control_button" onclick="prev_project();"><i class="fas fa-arrow-circle-left"></i></button>
 			<button class="project_cat control_button" onclick="return_to_overview();">Return to Project Categories</button>
-			<div class="row">
-			  <div class="col">
-					Memterm
-				</div>
-			  <div class="col">
-					Automated secondary NS zone syncing with primary NS
-				</div>
+			<button class="project_cat control_button" onclick="next_project();"><i class="fas fa-arrow-circle-right"></i></button>			<div id="1" class="l_proj" style="display: none;">
+				Memterm
+			</div>
+			<div id="2" class="l_proj" style="display: none;">
+				Automated secondary NS zone syncing with primary NS
 			</div>
 		</div>
 
 		<div class="net_projects">
+			<button class="project_cat control_button" onclick="prev_project();"><i class="fas fa-arrow-circle-left"></i></button>
 			<button class="project_cat control_button" onclick="return_to_overview();">Return to Project Categories</button>
-			<div class="row">
-			  <div class="col">
-					Subnet Device scanner
-				</div>
-			  <div class="col">
-					VLAN Implementation on Ryu SDN Framework
-				</div>
+			<button class="project_cat control_button" onclick="next_project();"><i class="fas fa-arrow-circle-right"></i></button>			<div id="1" class="n_proj" style="display: none;">
+				Subnet Device Scanner	
 			</div>
-			<div class="row">
-			  <div class="col">
-					Network Protocol Attacks Study
-				</div>
-			  <div class="col">
-					Real time Network IDS with Machine Learning
-				</div>
+			<div id="2" class="n_proj" style="display: none;">
+				VLAN Implementation on Ryu SDN Framework
 			</div>
-			<div class="row">
-			  <div class="col">
-					SCTP and DCCP server-client implementation
-				</div>
+			<div id="3" class="n_proj" style="display: none;">
+				Network Protocol Attacks Study
+			</div>
+			<div id="4" class="n_proj" style="display: none;">
+				Real time Network IDS with Machine Learning
+			</div>
+			<div id="5" class="n_proj" style="display: none;">
+				SCTP and DCCP server-client implementation
 			</div>
 		</div>
 
 		<ul class="link_row">
-			<li><button id="link_btn" onclick="return_to_overview(); view_section('#home');">Home</button></li>
-			<li><button id="link_btn" style="color:var(--highlight);" disabled>Projects</button></li>
-			<li><button id="link_btn" onclick="return_to_overview(); view_section('#skills');">Skills</button></li>
-			<li><button id="link_btn" onclick="return_to_overview(); view_section('#resume');">Resume</button></li>
-			<li><button id="link_btn" onclick="return_to_overview(); view_section('#references');">References</button></li>
+			<li><button class="link_btn" onclick="return_to_overview(); view_section('#home');">Home</button></li>
+			<li><button class="link_btn" style="color:var(--highlight);" disabled>Projects</button></li>
+			<li><button class="link_btn" onclick="return_to_overview(); view_section('#skills');">Skills</button></li>
+			<li><button class="link_btn" onclick="return_to_overview(); view_section('#resume');">Resume</button></li>
+			<li><button class="link_btn" onclick="return_to_overview(); view_section('#references');">References</button></li>
 		</ul>
 
 	</div>
@@ -192,11 +177,11 @@
 		<h2> Coming soon... </h2>
 
 		<ul class="link_row">
-			<li><button id="link_btn" onclick="view_section('#home');">Home</button></li>
-			<li><button id="link_btn" onclick="view_section('#projects');">Projects</button></li>
-			<li><button id="link_btn" style="color:var(--highlight);" disabled>Skills</button></li>
-			<li><button id="link_btn" onclick="view_section('#resume');">Resume</button></li>
-			<li><button id="link_btn" onclick="view_section('#references');">References</button></li>
+			<li><button class="link_btn" onclick="view_section('#home');">Home</button></li>
+			<li><button class="link_btn" onclick="view_section('#projects');">Projects</button></li>
+			<li><button class="link_btn" style="color:var(--highlight);" disabled>Skills</button></li>
+			<li><button class="link_btn" onclick="view_section('#resume');">Resume</button></li>
+			<li><button class="link_btn" onclick="view_section('#references');">References</button></li>
 		</ul>
 
 	</div>
@@ -206,11 +191,11 @@
 		<h2> Coming soon... </h2>
 
 		<ul class="link_row">
-			<li><button id="link_btn" onclick="view_section('#home');">Home</button></li>
-			<li><button id="link_btn" onclick="view_section('#projects');">Projects</button></li>
-			<li><button id="link_btn" onclick="view_section('#skills');">Skills</button></li>
-			<li><button id="link_btn" style="color:var(--highlight);" disabled>Resume</button></li>
-			<li><button id="link_btn" onclick="view_section('#references');">References</button></li>
+			<li><button class="link_btn" onclick="view_section('#home');">Home</button></li>
+			<li><button class="link_btn" onclick="view_section('#projects');">Projects</button></li>
+			<li><button class="link_btn" onclick="view_section('#skills');">Skills</button></li>
+			<li><button class="link_btn" style="color:var(--highlight);" disabled>Resume</button></li>
+			<li><button class="link_btn" onclick="view_section('#references');">References</button></li>
 		</ul>
 
 	</div>
@@ -220,11 +205,11 @@
 		<h2> Coming soon... </h2>
 
 		<ul class="link_row">
-			<li><button id="link_btn" onclick="view_section('#home');">Home</button></li>
-			<li><button id="link_btn" onclick="view_section('#projects');">Projects</button></li>
-			<li><button id="link_btn" onclick="view_section('#skills');">Skills</button></li>
-			<li><button id="link_btn" onclick="view_section('#resume');">Resume</button></li>
-			<li><button id="link_btn" style="color:var(--highlight);" disabled>References</button></li>
+			<li><button class="link_btn" onclick="view_section('#home');">Home</button></li>
+			<li><button class="link_btn" onclick="view_section('#projects');">Projects</button></li>
+			<li><button class="link_btn" onclick="view_section('#skills');">Skills</button></li>
+			<li><button class="link_btn" onclick="view_section('#resume');">Resume</button></li>
+			<li><button class="link_btn" style="color:var(--highlight);" disabled>References</button></li>
 		</ul>
 
 	</div>
