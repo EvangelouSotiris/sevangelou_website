@@ -135,6 +135,7 @@ ul {
 }
 
 .project_overview {
+	padding-top: 10px;
 	display: block;
 }
 
@@ -160,6 +161,11 @@ ul {
 
 .net_projects {
 	display: none;
+}
+
+.proj_links a {
+	padding: 5px;
+	border: 1px solid var(--textcolor);
 }
 
 .control_button {
