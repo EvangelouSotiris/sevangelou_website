@@ -185,6 +185,7 @@ ul {
 
 .link_row li {
 	display: inline-block;
+	margin: 0.5em;
 }
 
 .link_btn {

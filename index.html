@@ -85,14 +85,14 @@
 				<div class="card-body">
 					<h4 class="card-title">Asynxy: Asynchronous Proxy RCE</h4>
 					<ul class="link_row">
-						<li class="link_btn"><img style="width: 80%" src="items/icons/python.png"></li>
-						<li class="link_btn"><img style="width: 100%" src="items/icons/nodejs.png"></li>
-						<li class="link_btn"><img style="width: 120%" src="items/icons/mongo.png"></li>
-						<li class="link_btn"><img style="width: 80%" src="items/icons/html.png"></li>
-						<li class="link_btn"><img style="width: 100%" src="items/icons/mysql.png"></li>
-						<li class="link_btn"><img style="width: 80%" src="items/icons/css.png"></li>
+						<li><img style="width: 80%" src="items/icons/python.png" title="Python 3 : Scripting Language"></li>
+						<li><img style="width: 100%" src="items/icons/nodejs.png" title="Node.js : Javascript Framework"></li>
+						<li><img style="width: 80%" src="items/icons/html.png" title="HTML 5 : Markup Language"></li>
+						<li><img style="width: 80%" src="items/icons/css.png" title="CSS 3 : Styling Language"></li>
+						<li><img style="width: 100%" src="items/icons/mysql.png" title="MySQL(MariaDB) : Relational Database"></li>
+						<li><img style="width: 120%" src="items/icons/mongo.png" title="MongoDB : NoSQL Database"></li>
 					</ul>
-					<p class="card-text">Asynxy is a simple "middleware" web application that performs remote code execution for a "master" node to a set of slaves. 
+					<p class="card-text">Asynxy is a "middleware" web application that performs remote code execution for a "master" node to a set of slaves. 
 						This is achieved through a periodic request for new commands from the slaves, a local execution using Python and lastly a post of the command's
 						results back to the webapp for the master to see. The benefits that the webapp introduces is control over a large set of slaves either individually
 						or as a group (botnet-like) and a connection mostly unbothered by firewalls or NAT since it is based on HTTP and is always initiated from the slaves.
@@ -104,13 +104,68 @@
 				</div>
 			</div>
 			<div id="2" class="w_proj" style="display: none;">
-				This Website!
+				<br>
+				<img class="card-img-top" src="items/website_card.png" style="width: 70%;">
+				<div class="card-body">
+					<h4 class="card-title">This Website!</h4>
+					<ul class="link_row">
+						<li><img style="width: 100%" src="items/icons/javascript.png" title="Javascript: Scripting Web Language"></li>
+						<li><img style="width: 80%" src="items/icons/html.png" title="HTML 5 : Markup Language"></li>
+						<li><img style="width: 80%" src="items/icons/css.png" title="CSS 3 : Styling Language"></li>
+					</ul>
+					<p class="card-text">This website was created to hone my skills using the holy web triad, HTML, CSS, Javascript. The website features a 
+						simple description of me and what I do, my projects, my skills, my CV (Curicculum Vitae) and some references or testimonials that I 
+						possess. In order to make the experience more fun I have given the option for the user to use multiple colorschemes (themes) to browse 
+						my webpage.
+					</p>
+				</div>
+				<div class="proj_links">
+					<a href="https://github.com/EvangelouSotiris/sevangelou_website" class="card-link" target="_blank">Repository</a>
+				</div>
 			</div>
 			<div id="3" class="w_proj" style="display: none;">
-				Ingame Database App with Redis
+				<br>
+				<img class="card-img-top" src="items/ingameapp.png" style="width: 70%;">
+				<div class="card-body">
+					<h4 class="card-title">Ingame Database App with Redis</h4>
+					<ul class="link_row">
+						<li><img style="width: 100%" src="items/icons/nodejs.png" title="Node.js : Javascript Framework"></li>
+						<li><img style="width: 80%" src="items/icons/html.png" title="HTML 5 : Markup Language"></li>
+						<li><img style="width: 80%" src="items/icons/css.png" title="CSS 3 : Styling Language"></li>
+						<li><img style="width: 80%" src="items/icons/redis.png" title="Redis : NoSQL Key-Value Store Database"></li>
+						<li><img style="width: 80%" src="items/icons/latex.png" title="LaTex : Typesetting system for documentations"></li>
+					</ul>
+					<p class="card-text"> A simple web application that uses the combination of Node.js and the Redis key-value store in order
+						to simulate a "game" and the actions that an RPG player would use. The user can search for other users ,register a new account,
+						login with his password, and do certain game actions such as looting an enemy, finding treasures, buying from stores, 
+						selling to stores and viewing his account information and inventory.
+					</p>
+				</div>
+				<div class="proj_links">
+					<a href="https://github.com/EvangelouSotiris/ingame_database_app_redis" class="card-link" target="_blank">Repository</a>
+					<a href="items/Redis_report_2159.pdf" class="card-link" target="_blank">Redis Survey</a>
+				</div>
 			</div>
 			<div id="4" class="w_proj" style="display: none;">
-				Tomcat Java Servlet Webapp
+				<br>
+				<img class="card-img-top" src="items/ingameapp.png" style="width: 70%;">
+				<div class="card-body">
+					<h4 class="card-title">Tomcat Java Servlet Webapp</h4>
+					<ul class="link_row">
+						<li><img style="width: 70%" src="items/icons/java.png" title="Java: OO Programming Language"></li>
+						<li><img style="width: 80%" src="items/icons/tomcat.png" title="Apache tomcat: Java Servlet engine"></li>
+						<li><img style="width: 80%" src="items/icons/html.png" title="HTML 5 : Markup Language"></li>
+						<li><img style="width: 80%" src="items/icons/css.png" title="CSS 3 : Styling Language"></li>
+						<li><img style="width: 100%" src="items/icons/mysql.png" title="MySQL(MariaDB) : Relational Database"></li>
+					</ul>
+					<p class="card-text"> Two simple auth web applications in Java Servlet structure in Apache Tomcat 8. The users are saved in a 
+						MariaDB database and the interface is implemented using JDBC in the first webapp, and Hibernate JPA in the second 
+						webapp.
+					</p>
+				</div>
+				<div class="proj_links">
+					<a href="https://github.com/EvangelouSotiris/ECE_U_188_Projects" class="card-link" target="_blank">Repository</a>
+				</div>
 			</div>
 		</div>
 
