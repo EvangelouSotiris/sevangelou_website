@@ -76,7 +76,11 @@ function load_project(choice) {
 	element.style.setProperty("display","none");
 	const element2 = document.querySelector(sections[choice]);
 	element2.style.setProperty("display","block");
-	document.getElementsByClassName(proj_desc[choice])[0].style.setProperty("display","block");
+	var project_list = document.getElementsByClassName(proj_desc[choice])
+	project_list[0].style.setProperty("display","block");
+	for (i=1; i< project_list.length; i++){
+		project_list[i].style.setProperty("display","none");
+	}
 }
 
 function return_to_overview() {
