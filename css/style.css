@@ -207,6 +207,20 @@ ul {
 	text-decoration: none;
 }
 
+.skill_row {
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.skill_row li {
+	margin: 0.5em;
+}
+
+.skill_title {
+	color: var(--highlight);
+}
+
 #home {
 	display: inline-block;
 }
