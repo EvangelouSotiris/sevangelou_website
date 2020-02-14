@@ -10,6 +10,11 @@ body {
     text-align: center;
 }
 
+#ui_notifIt.arrow{
+    background-color: var(--textcolor);
+	color: var(--highlight);
+}
+
 ul {
 	list-style: none;
   padding-left: 0;

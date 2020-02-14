@@ -7,14 +7,15 @@
 	<!-- CSS IMPORTS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+ 	<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/jpg" href="items/favicon.png"/>
-
+	<link rel="stylesheet" type="text/css" href="css/notifIt.css">
 	<!-- JAVASCRIPT IMPORTS -->
 	<script type="text/javascript" src="js/js_functions.js"></script>
+	<script type="text/javascript" src="js/notifIt.js"></script>
 	<script src="https://kit.fontawesome.com/8414bca3f8.js" crossorigin="anonymous"></script>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- META TAGS -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -496,28 +497,34 @@
 
 		<h4>Programming Languages</h4>
 		<div class="row">
-			<div class="col-md-4" style="float: left;">
-				<h4 class="skill_title">High level:</h4>
+			<div class="col-md-6" style="float: left;">
+				<h4 class="skill_title">Good Experience:</h4>
 				<ul>
 					<li><img style="width: 18px" src="items/icons/python.png" title="Python 3 : Scripting Language"> Python</li>
 					<li><img style="width: 18px" src="items/icons/c.png" title="C low-level Programming Language"> C</li>
 					<li><img style="width: 18px" src="items/icons/shell.png" title="BASH Shell Scripting Language"> Shell (BASH)</li>
 				</ul>
 			</div>
-			<div class="col-md-4">
-				<h4 class="skill_title">Basic level:</h4>
+			<div class="col-md-6">
+				<h4 class="skill_title">Basic experience:</h4>
 				<ul>
 					<li><img style="width: 18px" src="items/icons/java.png" title="Java: OO Programming Language"> Java</li>
 					<li><img style="width: 18px" src="items/icons/javascript.png" title="Javascript Web Scripting Language"> Javascript</li>
 					<li><img style="width: 18px" src="items/icons/c++.png" title="C++ programming language"> C++</li>
 				</ul>
 			</div>
-			<div class="col-md-4">
-				<h4 class="skill_title">Markup/Styling/Format:</h4>
+		</div>
+		<h4 class="skill_title">Other type Languages:</h4>
+		<div class="row">
+			<div class="col-md-6">
 				<ul>
 					<li><img style="width: 18px" src="items/icons/html.png" title="HTML Markup Language"> HTML</li>
 					<li><img style="width: 18px" src="items/icons/css.png" title="Cascading Style sheets"> CSS</li>
 					<li><img style="width: 18px" src="items/icons/markdown.png" title="Markup language"> Markdown</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<ul>
 					<li><img style="width: 18px" src="items/icons/latex.png" title="Typesetting system"> LaTeX</li>
 					<li><img style="width: 18px" src="items/icons/json.png" title="Javascript Object Notation"> JSON</li>
 					<li><img style="width: 18px" src="items/icons/xml.png" title="eXtensible Markup Language"> XML</li>
@@ -580,6 +587,19 @@
 		<li><a class="social" href="mailto:sevangelou@uth.gr?subject=Hello there!" target="_blank"><i class="fas fa-envelope"></i></a></li>
 	</ul>
 
+	<script>
+		document.onkeydown = function(evt) {
+			evt = evt || window.event;
+			switch (evt.keyCode) {
+				case 37:
+					pressed_arrow(0);
+					break;
+				case 39:
+					pressed_arrow(1);
+					break;
+			}
+		};
+	</script>
 </body>
 
 </html>

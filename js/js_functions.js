@@ -69,6 +69,16 @@ function view_section(string_with_id) {
 	});
 }
 
+function show_notif_msg() {
+	notif({
+		msg: "Cycle through my projects using keyboard arrows! <i class='fas fa-arrow-circle-left'></i> <i class='fas fa-arrow-circle-right'></i>",
+		type: "arrow",
+		timeout: 3000,
+		width: 400,
+		multiline: 1
+	});
+}
+
 function load_project(choice) {
 	var sections = [".web_projects",".ml_projects",".cs_projects",".gs_projects",".la_projects",".net_projects"];
 	var proj_desc = ["w_proj","m_proj","c_proj","g_proj","l_proj","n_proj"];
@@ -81,6 +91,7 @@ function load_project(choice) {
 	for (i=1; i< project_list.length; i++){
 		project_list[i].style.setProperty("display","none");
 	}
+	show_notif_msg();
 }
 
 function return_to_overview() {
@@ -144,4 +155,18 @@ function prev_project() {
 			}
 		}
 	}
+}
+
+function pressed_arrow(right_or_left) {
+	var sections = ["web_projects","ml_projects","cs_projects","gs_projects","la_projects","net_projects"];
+	sections.forEach(element => {
+		if (document.getElementsByClassName(element)[0].style.display == "block") {
+			if (right_or_left == 0){
+				prev_project();
+			}
+			else {
+				next_project();
+			}
+		}
+	});
 }
