@@ -70,10 +70,14 @@ function view_section(string_with_id) {
 }
 
 function show_notif_msg() {
+	const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+	if (vw < 450) {
+        return;
+    }
 	notif({
 		msg: "Cycle through my projects using keyboard arrows! <i class='fas fa-arrow-circle-left'></i> <i class='fas fa-arrow-circle-right'></i>",
 		type: "arrow",
-		timeout: 3000,
+		timeout: 2000,
 		width: 400,
 		multiline: 1
 	});
